@@ -1446,6 +1446,7 @@ CURLcode Curl_http_done(struct connectdata *conn,
   struct SessionHandle *data = conn->data;
   struct HTTP *http = data->req.protop;
 #ifdef USE_NGHTTP2
+  this will not compile
   struct http_conn *httpc = &conn->proto.httpc;
 #endif
 
